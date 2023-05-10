@@ -1,36 +1,27 @@
-// console.log("hello");
+class Node {
+  constructor(val) {
+    this.val = val;
+    this.next = null;
+  }
+}
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
 
-// function Person(firstName, age) {
-//   this.firstName = firstName;
-//   this.age = age;
-// }
-
-// const sandeep = new Person("sandeep", 21);
-
-// const akash = new Person("akash", 23);
-// console.log(sandeep);
-// console.log(akash);
-
-// Person.prototype.calcAge = function () {
-//   console.log(2037 - this.age);
-// };
-
-// sandeep.calcAge();
-
-// akash.calcAge();
-
-class Person {
-  constructor(firstName, age) {
-    this.firstName = firstName;
-    this.age = age;
+  append(val) {
+    if (this.head == null) {
+      this.head = new Node(val);
+      return;
+    }
+    let curr = this.head;
+    console.log(curr.next);
+    while (curr.next !== null) {
+      curr = curr.next;
+    }
   }
 }
 
-const sandeep = new Person("sandeep", 21);
+const list = new LinkedList();
 
-Person.prototype.nameLog = function () {
-  console.log(this.firstName);
-};
-console.log(sandeep);
-
-sandeep.nameLog();
+list.append("a");

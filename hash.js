@@ -24,8 +24,8 @@ class Hashtable {
 
 const myTable = new Hashtable();
 
-mytable.setitem("sirname", "thakur");
-mytable.setitem("age", 10);
+myTable.setitem("sirname", "thakur");
+myTable.setitem("age", 10);
 
 console.log(myTable.table);
 console.log(myTable.getItem("sirName"));
