@@ -112,20 +112,32 @@ d.next = e;
 // }
 // console.log(findElement(a, "x"));
 
-function getValue(head, index) {
-  if (index == 0) return head.val;
-  let currIdx = 0;
+// function getValue(head, index) {
+//   if (index == 0) return head.val;
+//   let currIdx = 0;
+//   let current = head;
+
+//   while (current != null) {
+//     // console.log(current.val, currIdx);
+
+//     if (currIdx === index) {
+//       return current.val;
+//     }
+//     currIdx += 1;
+//     current = current.next;
+//   }
+// }
+
+// console.log(getValue(a, 3));
+function reverseList(head) {
   let current = head;
 
-  while (current != null) {
-    // console.log(current.val, currIdx);
+  let prev = null;
 
-    if (currIdx === index) {
-      return current.val;
-    }
-    currIdx += 1;
-    current = current.next;
+  while (current != null) {
+    const next = current.next;
+    prev = current;
+    current = next;
   }
 }
-
-console.log(getValue(a, 3));
+reverseList(a);
