@@ -50,27 +50,28 @@
 // C             100
 // D             500
 // M             1000
-const str = "VII";
-// console.log(str[0]);
-function toRoman(str) {
-  let val = 0;
-  const map = new Map([
-    ["I", 1],
-    ["V", 5],
-    ["X", 10],
-    ["L", 50],
-    ["C", 100],
-    ["D", 500],
-    ["M", 1000],
-  ]);
 
-  for (let i = 0; i < str.length; i++) {
-    if (map.has(str[i])) {
-      val += map.get(str[i]);
-    }
-  }
+// const str = "IV";
+// // console.log(str[0]);
+// function toRoman(str) {
+//   let val = 0;
+//   const map = new Map([
+//     ["I", 1],
+//     ["V", 5],
+//     ["X", 10],
+//     ["L", 50],
+//     ["C", 100],
+//     ["D", 500],
+//     ["M", 1000],
+//   ]);
 
-  return val;
-}
+//   for (let i = 0; i < str.length; i++) {
+//     if (map.has(str[i])) {
+//       val += map.get(str[i]);
+//     }
+//   }
 
-console.log(toRoman(str));
+//   return val;
+// }
+
+// console.log(toRoman(str));
