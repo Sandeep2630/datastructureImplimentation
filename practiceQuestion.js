@@ -24,25 +24,32 @@
 // Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
 // Output: [4,9]
 // Explanation: [9,4] is also accepted.
-const nums1 = [4, 9, 5];
-const nums2 = [9, 4, 9, 8, 4];
+const nums1 = ["Mary", "john", "don", "jake"];
+const nums2 = [105, 100, 125, 107];
 
-function intersection(arr1, arr2) {
-  const map = new Map();
-  const intersection = [];
+// function intersection(arr1, arr2) {
+//   const map = new Map();
+//   const intersection = [];
 
-  // Add elements of the first array to the Map
-  arr1.forEach((element) => {
-    map.set(element, 1);
-  });
+//   // Add elements of the first array to the Map
+//   arr1.forEach((element) => {
+//     map.set(element, 1);
+//   });
 
-  // Check elements of the second array in the Map
-  arr2.forEach((element) => {
-    if (map.has(element)) {
-      intersection.push(element);
-    }
-  });
+//   // Check elements of the second array in the Map
+//   arr2.forEach((element) => {
+//     if (map.has(element)) {
+//       intersection.push(element);
+//     }
+//   });
 
-  return intersection;
+//   return intersection;
+// }
+// console.log(intersection(nums1, nums2));
+function sortHeight(nums1, nums2) {
+
+  
+
+  return val
 }
-console.log(intersection(nums1, nums2));
+console.log(sortHeight(nums1, nums2));

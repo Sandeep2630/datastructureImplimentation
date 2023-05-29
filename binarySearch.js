@@ -1,4 +1,4 @@
-// const arr = [1, 3, 5, 6, 7, 9, 10, 15];
+const arr = [1, 3, 5, 6, 7, 9, 10, 15];
 
 // function binarySearch(arr, val) {
 //   let lower = 0;
@@ -75,3 +75,25 @@
 // }
 
 // console.log(toRoman(str));
+
+function binarySearch(nums, target) {
+  let low = 0;
+  let high = nums.length - 1;
+
+  while (low < high) {
+    let middle = Math.floor(low + (high - low) / 2);
+    // console.log(middle);
+    if (arr[middle] === target) {
+      return middle;
+    }
+    if (target < arr[middle]) {
+      high = middle - 1;
+    }
+    if (target > arr[middle]) {
+      low = middle + 1;
+    }
+  }
+  return -1;
+}
+
+console.log(binarySearch(arr, 10));
